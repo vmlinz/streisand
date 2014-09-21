@@ -11,7 +11,7 @@
   apt: name=deb.torproject.org-keyring force=yes
 
 - name: Install obfsproxy and Tor
-  apt: name={{ item }}
+  apt: name={{ item }} force=yes
   with_items:
     - obfsproxy
     - tor
